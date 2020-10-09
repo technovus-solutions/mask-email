@@ -1,0 +1,41 @@
+{
+    "name": "technovus-solutions/mask-email",
+    "description": "Display partial email by masking it",
+    "keywords": [
+        "email",
+        "mask"
+    ],
+    "homepage": "https://github.com/technovus-solutions/mask-email",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Technovus Solutions",
+            "email": "dev@technovus.in"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Technovus\\MaskEmail\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Technovus\\MaskEmail\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
